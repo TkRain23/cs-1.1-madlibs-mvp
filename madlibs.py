@@ -22,6 +22,7 @@ would then _____ the tomato.
 print(story)
 
 noun1 = raw_input("Enter a noun: ")
+int1 = raw_input("Enter a number: ")
 adj1 = raw_input("Enter a adjective: ")
 verb1 = raw_input("Enter a verb: ")
 verb2 = raw_input("Enter a verb: ")
@@ -33,10 +34,10 @@ verb4 = raw_input("Enter a verb: ")
 story = '''
 The Potatoes and the Tomatoes: A story by you
 
-There once was a potato named %s. The potato had %s friends.
+There once was a potato named %s. The potato had %s %s friends.
 Together they would %s, %s, and %s the tomatoes. One day the potato
 met a tomato named %s. The potato loved how %s the tomato was. The potato
 would then %s the tomato.
 '''
 
-print(story) % (noun1, adj1, verb1, verb2, verb3, noun2, adj2, verb4)
+print(story) % (noun1, int(int1), adj1, verb1, verb2, verb3, noun2, adj2, verb4)
